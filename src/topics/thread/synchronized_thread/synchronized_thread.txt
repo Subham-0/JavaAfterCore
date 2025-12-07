@@ -1,0 +1,5 @@
+Drawback of Synchronized
+1. No guaranty of fairness lock
+2. Indefinitely blocking
+3. No Interruptibility
+4. Read/Write Locking
