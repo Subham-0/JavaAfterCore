@@ -1,0 +1,21 @@
+What is Thread Starvation?
+Thread starvation happens when a thread keeps waiting for a resource (like a lock, CPU time, or I/O) but never gets a chance to run because other threads keep getting preference.
+
+In short:
+A thread is alive but not progressing because it’s always being skipped.
+
+Causes of Thread Starvation:
+Unfair locks
+With new ReentrantLock(false) (default), a new thread can sometimes “jump ahead” in acquiring the lock.
+Old waiting threads may starve if this keeps happening.
+Thread priorities
+If high-priority threads keep running, low-priority ones may never get CPU time.
+Resource hogging
+A few threads constantly hold a shared resource (like DB connection, file, or CPU) → others starve.
+
+How to Prevent Starvation?
+Use fair locks → new ReentrantLock(true).
+Ensures FIFO order → no starvation.
+Avoid relying heavily on thread priorities.
+Design code so that long-running tasks don’t block resources for too long.
+Use higher-level concurrency utilities (like Semaphore, BlockingQueue, ExecutorService) which handle fairness better.
