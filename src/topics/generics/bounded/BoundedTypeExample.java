@@ -82,6 +82,12 @@ public class BoundedTypeExample {
         System.out.println("Average: " + calculateAverage(floatList));
         System.out.println("Max: " + findMax(floatList));
         System.out.println("Min: " + findMin(floatList));
+
+        System.out.println("\n=== Mixed Number Types ===");
+        List<Number> mixedList = Arrays.asList(10, 20.5, 15.7f, 30);
+        System.out.println("List: " + mixedList);
+        System.out.println("Sum: " + calculateSum(mixedList));
+        System.out.println("Average: " + calculateAverage(mixedList));
     }
 
 
