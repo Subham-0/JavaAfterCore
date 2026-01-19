@@ -66,6 +66,14 @@ public class BoundedTypeExample {
         System.out.println("Max: " + findMax(intList));
         System.out.println("Min: " + findMin(intList));
         System.out.println("Max (with Comparable): " + findMaxWithComparable(intList));
+
+        System.out.println("\n=== Double List Tests ===");
+        List<Double> doubleList = Arrays.asList(1.5, 2.7, 3.2, 4.9, 5.1);
+        System.out.println("List: " + doubleList);
+        System.out.println("Sum: " + calculateSum(doubleList));
+        System.out.println("Average: " + calculateAverage(doubleList));
+        System.out.println("Max: " + findMax(doubleList));
+        System.out.println("Min: " + findMin(doubleList));
     }
 
 
