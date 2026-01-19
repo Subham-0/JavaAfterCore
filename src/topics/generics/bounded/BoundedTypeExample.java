@@ -74,6 +74,14 @@ public class BoundedTypeExample {
         System.out.println("Average: " + calculateAverage(doubleList));
         System.out.println("Max: " + findMax(doubleList));
         System.out.println("Min: " + findMin(doubleList));
+
+        System.out.println("\n=== Float List Tests ===");
+        List<Float> floatList = Arrays.asList(10.5f, 20.3f, 15.7f, 8.2f);
+        System.out.println("List: " + floatList);
+        System.out.println("Sum: " + calculateSum(floatList));
+        System.out.println("Average: " + calculateAverage(floatList));
+        System.out.println("Max: " + findMax(floatList));
+        System.out.println("Min: " + findMin(floatList));
     }
 
 
